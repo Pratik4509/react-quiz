@@ -7,7 +7,7 @@ const QuizForm = () => {
         <form>
             <h2 style={{marginBottom: "2rem"}}>Let's Start Quiz</h2>
             <div className="mb-3">
-                <label className="form-label" htmlFor="no0fQuestiosn">Number of Questions </label>
+                <label className="form-label" htmlFor="noofQuestiosn">Number of Questions </label>
                 <input
                     type="number"
                     name="amount"
@@ -16,7 +16,6 @@ const QuizForm = () => {
                     onChange={handleChange}
                     min={1}
                     max={50}
-                    style={{width:'400px'}}
                 />
             </div>
             <div className="mb-3">
