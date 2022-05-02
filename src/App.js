@@ -45,7 +45,7 @@ if(tempIndex === 3){
           <p>Total Questions: {questions.length}</p>
         </div>
         <article className="container">
-          <h2 dangerouslySetInnerHTML={{__html: question}}></h2>
+          <h2 className="text-center" dangerouslySetInnerHTML={{__html: question}}></h2>
           <div>
             {answers.map((answer, index) => {
               return (
@@ -63,7 +63,7 @@ if(tempIndex === 3){
           </div>
         </article>
         <button className="btn btn-warning next-question"
-          style={{width: "20%", marginRight: "1rem"}}
+          style={{ marginRight: "1rem"}}
           onClick={nextQuestion}>
             Next Question
           </button>
