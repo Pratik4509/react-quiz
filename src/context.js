@@ -5,7 +5,10 @@ const table = {
     sports: 21,
     gk:9,
     history: 23,
-    politics: 24
+    politics: 24,
+    computers: 18,
+    cartoons: 32,
+    anime: 31
 
 }
 

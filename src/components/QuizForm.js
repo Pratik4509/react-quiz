@@ -31,6 +31,9 @@ const QuizForm = () => {
                 <option value="gk">General Knowledge</option>
                 <option value="history">History</option>
                 <option value="politics">Politics</option>
+                <option value="computers">Computers</option>
+                <option value="cartoons">Cartoon & Animations</option>
+                <option value="anime">Anime</option>
                 </select>
             </div>
             <div className="mb-3">
