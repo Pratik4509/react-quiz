@@ -122,9 +122,25 @@ main {
     width: 20%;
 }
 
+.showAnswer {
+    display: block;
+}
+
+.dontShowAnswer {
+    display: none;
+}
+
 @media only screen and (max-width: 600px) {
     .next-question {
         width: 100%;
+    }
+    .showAnswer {
+        display: block;
+        margin-top: 10px;
+    }
+    .dontShowAnswer {
+        display: none;
+        margin-top: 10px;
     }
 }
 
@@ -132,5 +148,13 @@ main {
     /*Small smartphones [325px -> 425px]*/
     .next-question {
         width: 100%;
+    }
+    .showAnswer {
+        display: block;
+        margin-top: 10px;
+    }
+    .dontShowAnswer {
+        display: none;
+        margin-top: 10px;
     }
 }

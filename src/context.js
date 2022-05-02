@@ -28,6 +28,8 @@ const AppProvider = ({ children }) => {
         difficulty: 'easy'
     });
     const [isModelOpen, setIsModelOpen] = useState(false);
+    const [showAnswer, setShowAnswer] = useState('');
+
 
     const fetchQuestions = async(url) => {
         setLoading(true);
@@ -69,8 +71,16 @@ const AppProvider = ({ children }) => {
         if (value) {
             setCorrect((oldState) => oldState + 1);
         }
+        const c = 0;
+        const count = c+index;
+        setShowAnswer(questions[count]['correct_answer']);
 
-        nextQuestion();
+        // console.log(showAnswer)
+        setTimeout(() => {
+            nextQuestion();
+            setShowAnswer('');
+          }, 2000)
+        
     };
 
     const closeModel = () => {
@@ -99,6 +109,7 @@ const AppProvider = ({ children }) => {
             correct,
             error,
             isModelOpen,
+            showAnswer,
             nextQuestion,
             checkAnswer,
             closeModel,

@@ -12,7 +12,8 @@ const App = () => {
     index,
     correct,
     nextQuestion,
-    checkAnswer
+    checkAnswer,
+    showAnswer
   } = useGlobalContext();
 
   if(waiting) {
@@ -62,6 +63,9 @@ if(tempIndex === 3){
             })}
           </div>
         </article>
+        <p className={`${
+        showAnswer ? "showAnswer" : "dontShowAnswer"
+        }`}>Correct Answer: <span>{showAnswer}</span></p>
         <button className="btn btn-warning next-question"
           style={{ marginRight: "1rem"}}
           onClick={nextQuestion}>
